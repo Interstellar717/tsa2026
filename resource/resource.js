@@ -15,8 +15,8 @@ if (parseInt(id) > -1) {
 
 async function getPageHTML(id) {
     id = id.toString().padStart(6, 0);
-    var x = await fetch("/resource/blank.html");
-    var json = await fetch("/resource/resources.json");
+    var x = await fetch("/tsa2026/resource/blank.html");
+    var json = await fetch("/tsa2026/resource/resources.json");
     if (!x.ok) return false;
     if (!json.ok) return false;
     x = await x.text();
@@ -27,5 +27,5 @@ async function getPageHTML(id) {
     qs("#resource-frame #PERSON-NAME").textContent = json[parseInt(id)].person.name;
     qs("#resource-frame #PERSON-IMG").src = json[parseInt(id)].person.img;
     qs("#resource-frame #RESOURCE-DESCRIPTION").textContent = json[parseInt(id)].description;
-    qs("#resource-frame #RESOURCE-IMAGE").src = json[parseInt(id)].image || "/img/placeholder.jpg";
+    qs("#resource-frame #RESOURCE-IMAGE").src = json[parseInt(id)].image || "/tsa2026/img/placeholder.jpg";
 }
