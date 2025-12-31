@@ -33,13 +33,13 @@ function filterResourcesByTag(tag) {
     }
 
     for (let i in matching) {
-        display.querySelectorAll(".filtered-event .filev-img")[i].src = matching[i].image || "/img/placeholder.jpg";
+        display.querySelectorAll(".filtered-event .filev-img")[i].src = matching[i].image || "/tsa2026/img/placeholder.jpg";
         display.querySelectorAll(".filtered-event .caption a")[i].textContent = matching[i].name;
-        display.querySelectorAll(".filtered-event .caption a")[i].href = "/resource/?id=" + i.toString().padStart(6, 0);
+        display.querySelectorAll(".filtered-event .caption a")[i].href = "/tsa2026/resource/?id=" + i.toString().padStart(6, 0);
     }
 }
 (async () => {
-    var json = await fetch("/resource/resources.json");
+    var json = await fetch("/tsa2026/resource/resources.json");
     if (!json.ok) return false;
     resourceJSON = await json.json();
 
