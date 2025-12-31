@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h5 id="ana">ana</h5>
+            <h1 id="calypto">Calypto</h1>
+            <ul id="navbar-items">
+                <li><a href="/browse/">Browse</a></li>
+                <li><a href="#tags">Categories</a></li>
+                <li><a href="/resource/?random">Random</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="first-section">
+        <div id="resource-information">
+            <h1 id="RESOURCE-NAME">Resource Name</h1>
+            <a id="person-label">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocIDAIIBQz49xhCQGrZ3yCpmoDJTSzDJJpri0V5bVbnGwCypEzWQ=s360-c-no"
+                    id="PERSON-IMG" alt="profile picture">
+                <h3 id="PERSON-NAME">Person Name</h3>
+            </a>
+            <p id="RESOURCE-DESCRIPTION">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nulla
+                atque explicabo vitae non.
+                Eius numquam ratione recusandae voluptatibus atque corporis illum dignissimos. Beatae libero sit saepe,
+                pariatur neque recusandae.</p>
+        </div>
+
+        <div class="img-container">
+            <img src="" alt="" id="RESOURCE-IMAGE">
+        </div>
+    </section>
+
+
+    <section id="categories">
+        <h1>Other Resources</h1>
+        <h3 id="tags">Tags</h3>
+        <div class="categories-container">
+            <div class="categories-nav">
+                <button onclick="filterResourcesByTag('events')">Events</button>
+                <button onclick="filterResourcesByTag('services')">Services</button>
+                <button onclick="filterResourcesByTag('educational')">Educational</button>
+                <button onclick="filterResourcesByTag('startups')">Startups</button>
+            </div>
+            <div id="event-container" class="event-container">
+                <div class="filtered-event">
+                    <img src="" class="filev-img" alt="temporary image">
+                    <div class="caption">Temporary Text</div>
+                </div>
+                <div class="filtered-event">
+                    <img src="" class="filev-img" alt="temporary image">
+                    <div class="caption">Temporary Text</div>
+                </div>
+                <div class="filtered-event">
+                    <img src="" class="filev-img" alt="temporary image">
+                    <div class="caption">Temporary Text</div>
+                </div>
+                <div class="filtered-event">
+                    <img src="" class="filev-img" alt="temporary image">
+                    <div class="caption">Temporary Text</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 TSA National Conference Entry | [Chapter/School Name]</p>
+    </footer>
+
+    <script src="/main.js"></script>
+
+</body>
+
+</html>

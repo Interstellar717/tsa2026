@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Resource Example",
+        "person": {
+            "name": "John Doe",
+            "img": "https://lh3.googleusercontent.com/a/ACg8ocIDAIIBQz49xhCQGrZ3yCpmoDJTSzDJJpri0V5bVbnGwCypEzWQ=s360-c-no"
+        },
+        "description": "This is an example resource, an event.",
+        "tags": [
+            "events"
+        ],
+        "image": ""
+    },
+    {
+        "name": "Resource Example 2",
+        "person": {
+            "name": "John Doe",
+            "img": "https://lh3.googleusercontent.com/a/ACg8ocIDAIIBQz49xhCQGrZ3yCpmoDJTSzDJJpri0V5bVbnGwCypEzWQ=s360-c-no"
+        },
+        "description": "This is an example resource, an event.",
+        "tags": [
+            "events"
+        ],
+        "images": ""
+    }
+]
